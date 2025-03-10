@@ -63,7 +63,7 @@ EXEC ER_SUMNUMBER 2,X
 --such as the error message, error number, severity, and state.
 BEGIN TRY
     INSERT INTO Customers (Customer_id, Customer_Name, Email) 
-    VALUES (1, 'MALAY', 'MALAY@GMAIL.COM');
+    VALUES (1, 'MOHIL', 'MOHIL@GMAIL.COM');
 END TRY
 BEGIN CATCH
     PRINT 'PRIMARY KEY VIOLATION ERROR';
@@ -139,8 +139,8 @@ BEGIN
     END CATCH;
 END;
 
-EXEC SP_UpdateCustomerEmail 1, 'MALAY@gmail.com'
-EXEC SP_UpdateCustomerEmail 2, 'hardik@gmail.com'
+EXEC SP_UpdateCustomerEmail 1, 'MOHIL@gmail.com'
+EXEC SP_UpdateCustomerEmail 2, 'vandan@gmail.com'
 
 --Part – C
 --9. Create a procedure which prints the error message that “The Customer_id is already taken. Try another one”.
@@ -165,8 +165,8 @@ BEGIN
     END CATCH;
 END;
 
-EXEC SP_InsertCustomer 1, 'MALAY', 'MALAY@gmail.com'
-EXEC SP_InsertCustomer 2, 'Hardik', 'hardik@gmail.com'
+EXEC SP_InsertCustomer 1, 'MOHIL', 'MOHIL@gmail.com'
+EXEC SP_InsertCustomer 2, 'Vandan', 'Vandan@gmail.com'
 
 --10. Handle Duplicate Email Insertion in Customers Table.
 	
