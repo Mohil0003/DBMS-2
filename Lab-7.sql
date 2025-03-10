@@ -120,7 +120,7 @@ BEGIN
 END
 
 EXEC SP_ValidateData ''
-EXEC SP_ValidateData 'MALAY'
+EXEC SP_ValidateData 'MOHIL'
 
 --8. Create a Procedure to Update Customer’s Email with Error Handling.
 CREATE PROCEDURE SP_UpdateCustomerEmail
