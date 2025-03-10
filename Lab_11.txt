@@ -88,7 +88,7 @@ db.employee.find({$or:[{ENAME:/^S/},{ENAME:/^M/}]})
 db.employee.find({ENAME:/il/})
 
 25. Find employees whose names do not contain 'a'. 
-db.employee.find({ENAME:/il/})
+db.employee.find({$nor:[{ENAME:/a/}]})
 
 26. Find employees whose names contain any digit.
 db.employee.find({ENAME:/\d/})
